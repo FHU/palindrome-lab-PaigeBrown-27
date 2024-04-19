@@ -2,9 +2,7 @@
 def palindrome(word):
     lower_case = word.lower()
     remove_space = lower_case.replace(" ", "")
-    first_half = remove_space[:len(remove_space)//2]
-    second_half = remove_space[len(remove_space)//2]
-    if first_half[0] == second_half[-1]:
+    if remove_space[0] == remove_space[-1]:
        return True
     elif remove_space == " ":
         return False
