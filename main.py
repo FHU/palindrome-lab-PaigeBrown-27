@@ -4,10 +4,10 @@ def palindrome(word):
     remove_space = lower_case.replace(" ", "")
     first_half = remove_space[:len(remove_space)//2]
     second_half = remove_space[len(remove_space)//2]
-    if remove_space == "":
-        return False
-    elif first_half[0] == second_half[-1]:
+    if first_half[0] == second_half[-1]:
        return True
+    elif remove_space == " ":
+        return False
     else:
         return False 
 
